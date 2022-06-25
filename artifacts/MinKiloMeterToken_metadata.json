@@ -166,6 +166,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "kkTypes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "minKiloMeterToken",
 				"outputs": [],
@@ -466,7 +485,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"mint.sol": "MinKiloMeterToken"
+			"MintkkToken.sol": "MinKiloMeterToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -568,11 +587,11 @@
 				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
 			]
 		},
-		"mint.sol": {
-			"keccak256": "0xea0e61eca614dea5654b66fe9a49ee12009725cffab8d7e518e0d0e25e8097f8",
+		"MintkkToken.sol": {
+			"keccak256": "0xb5fe3948088f473ba53b88dd2cb744a93d571f35a5dff7abbae71a6759243d92",
 			"urls": [
-				"bzz-raw://08f64b110fe05812fb468d4281ac6adfa878b8ca6ae9e982d08175ad19c72635",
-				"dweb:/ipfs/QmVghB29VkJpVGbamj5UMmthH5Wy8h54AoV3pKtrhsfBqq"
+				"bzz-raw://fe1184bc9860200452b7065966d3c945d88e14c790f370a8fc99b0a5da732ec1",
+				"dweb:/ipfs/QmY9DPcr72dQWZCfX4up7GHVcfv3sH9hSRoA7cjXTf8HJg"
 			]
 		}
 	},
