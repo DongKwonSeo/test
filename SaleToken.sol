@@ -28,4 +28,27 @@ contract SaleToken {
         onSaleKkTokenArry.push(_kkTokenId);
 
     }
+
+    function purchaseToken(uint256 _kkTokenId ) public payable{
+        uint256 price = kkTokenPrices[_kkTokenId];
+        address kkTokenOwner = mintkkTokenAddress.ownerOf(_kkTokenId);
+
+            require(price > 0,"token not sall");
+            require(price <= msg.value ,"sant lower price");
+            require(kkTokenOwner != msg.sender ,"Call is token owner!");
+
+        payable(kkTokenOwner).transfer(msg.value);
+        mintkkTokenAddress.safeTransferFrom(kkTokenOwner, msg.sender,_kkTokenId);
+
+        kkTokenPrices[_kkTokenId]= 0;
+
+        for(uint256 i = 0; i < onSaleKkTokenArry.length; i++){
+            if(kkTokenPrices[onSaleKkTokenArry[i]]== 0){
+                onSaleKkTokenArry[i] = onSaleKkTokenArry[onSaleKkTokenArry.length -1];
+                onSaleKkTokenArry.pop();
+            }
+        }
+    }
+
+ 
 }
