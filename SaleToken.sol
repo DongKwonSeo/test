@@ -50,5 +50,7 @@ contract SaleToken {
         }
     }
 
- 
+    function getOnsaleToken () view public returns (uint256){
+        return onSaleKkTokenArry.length;
+    }
 }
