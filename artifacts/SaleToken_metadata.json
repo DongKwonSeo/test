@@ -17,6 +17,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "getOnsaleToken",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -65,6 +78,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_kkTokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseToken",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -209,10 +235,10 @@
 			]
 		},
 		"SaleToken.sol": {
-			"keccak256": "0x8cfc06e263d2f7ee6fac7da2aee679d696a224ba19ecfc549a053692cb2ecb63",
+			"keccak256": "0x72e168a6dd44ddc3b1465ead7af9ab1d5294dea574c53f6d4797ea3e28af1a4a",
 			"urls": [
-				"bzz-raw://35542872f962bd83f50f4658c57764f7ff55126adc20d01a6c364a708084b3e9",
-				"dweb:/ipfs/QmTutvxx2bciMDNa8Arr9dk1HYUuCTmxwxAKWZFz86kykw"
+				"bzz-raw://c8d289f08c912851675d08594f081cb456f3f4f99793cba3a48ee0e69f58adf6",
+				"dweb:/ipfs/QmRfCHsGC34LUZzVT26puk98gUWWn1bKMH98mkdMG9BEn1"
 			]
 		}
 	},

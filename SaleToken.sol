@@ -13,7 +13,7 @@ contract SaleToken {
 
     uint256[] public onSaleKkTokenArry;
 
-
+    // 상품 등록
     function setForSaleKkToken(uint256 _kkTokenId, uint256 _price) public{
         address kkTokenOwner = mintkkTokenAddress.ownerOf(_kkTokenId);
 
@@ -29,6 +29,7 @@ contract SaleToken {
 
     }
 
+    // 상품 구매
     function purchaseToken(uint256 _kkTokenId ) public payable{
         uint256 price = kkTokenPrices[_kkTokenId];
         address kkTokenOwner = mintkkTokenAddress.ownerOf(_kkTokenId);
